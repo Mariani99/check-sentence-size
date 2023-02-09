@@ -1,0 +1,25 @@
+<!-- ESTE É UM BACKUP POIS ESTAVA TESTANDO A PAGE functions.php -->
+
+function biggest_word($words){
+    $biggest_word = "";
+           $word_length = 0;
+    foreach ($words as $word) {
+        if (strlen($word) > $word_length) {
+            $word_length = strlen($word);
+            $biggest_word = $word;
+        }
+    }
+    return $biggest_word;
+}
+
+function smallest_word($words){
+    $smallest_word = "";
+        $word_length = 100;
+    foreach ($words as $word) {
+        if (strlen($word) < $word_length) {
+            $word_length = strlen($word);
+            $smallest_word = $word;
+        }
+    }
+    return $smallest_word;
+}
